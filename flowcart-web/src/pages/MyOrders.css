@@ -1,0 +1,100 @@
+.orders-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.orders-container h2 {
+  margin-bottom: 24px;
+  color: #1a1a2e;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.orders-table th {
+  background: #1a1a2e;
+  color: white;
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.orders-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #444;
+}
+
+.orders-table tr:last-child td {
+  border-bottom: none;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status.confirmed {
+  background: #e6f4ea;
+  color: #2e7d32;
+}
+
+.status.failed {
+  background: #fdecea;
+  color: #c62828;
+}
+
+.status.pending {
+  background: #fff8e1;
+  color: #f57f17;
+}
+
+.empty {
+  color: #999;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.filter-btn:hover {
+  border-color: #1a1a2e;
+  color: #1a1a2e;
+}
+
+.filter-btn.active {
+  background: #1a1a2e;
+  color: white;
+  border-color: #1a1a2e;
+}
